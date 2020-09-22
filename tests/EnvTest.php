@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Eco\Tests;
 
 use Eco\Env;
@@ -13,9 +12,9 @@ class EnvTest extends TestCase
         parent::setUp();
 
         $content =
-        "FIRST_KEY=first".PHP_EOL.
-        "SECOND_KEY=2".PHP_EOL.
-        "LAST_KEY=".PHP_EOL;
+        'FIRST_KEY=first'.PHP_EOL.
+        'SECOND_KEY=2'.PHP_EOL.
+        'LAST_KEY='.PHP_EOL;
 
         file_put_contents('.env', $content);
     }

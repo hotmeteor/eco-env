@@ -1,18 +1,14 @@
 <?php
 
-
 namespace Eco;
 
 class Env
 {
-
-
     /**
      * Check if .env has a variable by key.
      *
      * @param $file
      * @param $key
-     * @return bool
      */
     public static function has($file, $key): bool
     {
@@ -56,7 +52,7 @@ class Env
     }
 
     /**
-     * Set an .env variable by key
+     * Set an .env variable by key.
      *
      * @param $file
      * @param $key
@@ -70,7 +66,7 @@ class Env
 
         $key = strtoupper(trim($key));
 
-        $setting = $key . '=' . self::formatValue($value) . PHP_EOL;
+        $setting = $key.'='.self::formatValue($value).PHP_EOL;
 
         $temp_file = "{$file}.tmp";
 
@@ -100,7 +96,7 @@ class Env
     }
 
     /**
-     * Unset an .env variable by key
+     * Unset an .env variable by key.
      *
      * @param $file
      * @param $key
@@ -141,7 +137,7 @@ class Env
     }
 
     /**
-     * Format an .env key name
+     * Format an .env key name.
      *
      * @param $value
      * @return string
@@ -151,7 +147,7 @@ class Env
         $value = trim($value);
 
         if (str_contains($value, ' ')) {
-            $value = "'" . $value . "'";
+            $value = "'".$value."'";
         }
 
         return $value;
