@@ -18,6 +18,8 @@ In a Laravel app, this is as easy as `base_path('.env')`.
 
 All `$key` values, for all methods, is case-insensitive. Keys will always be set in uppercase. 
 
+**Note:** The Env `set` and `unset` methods will actually *change* your .env file.
+
 #### Get
 
 `Env::get($file, $key)`
