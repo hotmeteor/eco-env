@@ -1,0 +1,11 @@
+bin/
+vendor/
+.vapor/
+public/*
+.env
+seed.php
+.env.production
+.env.staging
+vapor.phar
+.phpunit.result.cache
+.DS_Store
