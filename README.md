@@ -2,6 +2,8 @@
  
 A small set of tools for easily manipulating your project .env files.
 
+[![Latest Stable Version](https://poser.pugx.org/hotmeteor/eco-env/v)](//packagist.org/packages/hotmeteor/eco-env)
+
 ### Installation
 
 ```sh
