@@ -22,17 +22,25 @@ All `$key` values, for all methods, is case-insensitive. Keys will always be set
 
 Returns the full key/value string.
 
+#### Set
+
 `Env::set($file, $key, $value)`
 
 Sets a value by key.
+
+#### Unset
 
 `Env::unset($file, $key, $value)`
 
 Removes a value by key.
 
+#### Has
+
 `Env::has($file, $key, $value)`
 
 Checks if a value exists, by key.
+
+#### Format
 
 `Env::formatValue($value)`
 
